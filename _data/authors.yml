@@ -1,18 +1,10 @@
 # Authors
+# 这是文章/页面默认作者信息，与 _config.yml 中的 author 区块配合使用。
+# 后续填写真实信息时，把下面占位内容替换掉即可。
 
-Name Name:
-  name        : "Name Name"
-  uri         : "https://name.com"
-  email       : "name@name.com"
-  bio         : "This is the first name."
-  avatar      : "bio-photo-2.jpg"
-  twitter     : "name"
-  google_plus : "Name"
-
-Name2 Name2:
-  name        : "Name2 Name2"
-  email       : "name2@name2.com"
-  bio         : "I ordered what?"
-  avatar      : "bio-photo.jpg"
-  twitter     : "name2"
-  google_plus : "Name"
+Zhiyuan:
+  name        : "Zhiyuan"
+  uri         : "https://zhiyuanzion.github.io"
+  email       : "your.email@example.com"
+  bio         : "占位简介：在这里介绍你的研究方向和身份。"
+  avatar      : "profile.png"
