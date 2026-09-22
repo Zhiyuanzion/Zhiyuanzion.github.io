@@ -9,10 +9,10 @@
 # Basic Site Settings
 locale                   : "zh-CN"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "Zhiyuan"
+title                    : "Zhiyuann"
 title_separator          : "-"
 name                     : &name "Zhiyuann"
-description              : &description "Zhiyuan's personal site — AI student, builder, and lifelong learner."
+description              : &description "Zhiyuann's personal academic homepage - 个人学术主页"
 url                      : https://zhiyuanzion.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                          # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -26,7 +26,7 @@ author:
   avatar           : "profile.png"
   name             : "Zhiyuan"
   pronouns         : # example: "she/her"  
-  bio              : "AI student · builder · lifelong learner"
+  bio              : "一个人类，仅此而已  Just a human"
   location         : "PRC"
   employer         : "Yunnan University" # 学校/单位占位，请替换
   uri              : # URL
