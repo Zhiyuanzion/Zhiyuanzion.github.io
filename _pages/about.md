@@ -12,7 +12,7 @@ redirect_from:
   <div class="home-background" data-home-background data-backgrounds='{{ site.data.home.backgrounds | jsonify }}' aria-hidden="true"></div>
   <div class="home-content">
     <section class="profile-card" id="about">
-      <img class="profile-avatar" src="{{ site.data.home.avatar | relative_url }}" alt="{{ site.data.home.name }}">
+      <img class="profile-avatar" src="{{ site.data.home.avatar }}" alt="{{ site.data.home.name }}">
       <div class="profile-copy">
         <p class="profile-kicker">{{ site.data.home.school }}</p>
         <h1>{{ site.data.home.name }}</h1>
