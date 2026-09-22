@@ -1,17 +1,12 @@
-/* Personal portfolio homepage */
+/* Quiet personal homepage */
 .portfolio-home {
   --ink: #182235;
   --muted: #657084;
   --paper: #f5f7fb;
   --surface: #ffffff;
   --line: #dfe5ee;
-  --accent: #5b5ce2;
-  --accent-2: #13b3a8;
-  background:
-    linear-gradient(rgba(91, 92, 226, .045) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(91, 92, 226, .045) 1px, transparent 1px),
-    var(--paper);
-  background-size: 32px 32px;
+  --accent: #3e516d;
+  background: var(--paper);
   color: var(--ink);
 }
 
@@ -22,8 +17,7 @@
   --paper: #10131d;
   --surface: #171c29;
   --line: #2a3242;
-  --accent: #9a9cff;
-  --accent-2: #52d7cb;
+  --accent: #bfcbe0;
 }
 
 .portfolio-home .initial-content,
@@ -40,53 +34,16 @@
 .portfolio-home .greedy-nav { background: transparent; }
 .portfolio-home .greedy-nav a { color: var(--ink); }
 
-.home-shell { max-width: 1060px; margin: 0 auto; padding: 5.5rem 1.5rem 2.5rem; }
-.home-hero { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(230px, .55fr); gap: 3rem; align-items: end; min-height: 470px; }
-.eyebrow { color: var(--accent); font: 700 .76rem/1.2 monospace; letter-spacing: .11em; text-transform: uppercase; }
-.home-hero h1 { max-width: 800px; margin: .65rem 0 1.2rem; color: var(--ink); font-size: clamp(3rem, 8vw, 6.8rem); font-weight: 800; letter-spacing: -.065em; line-height: .91; }
-.home-hero h1 em { color: var(--accent); font-style: normal; }
-.hero-copy { max-width: 640px; color: var(--muted); font-size: 1.15rem; line-height: 1.8; }
-.hero-actions { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 1.8rem; }
-.hero-actions a { border: 1px solid var(--line); border-radius: 999px; color: var(--ink); font-weight: 700; padding: .75rem 1.1rem; text-decoration: none; }
-.hero-actions a:first-child { background: var(--accent); border-color: var(--accent); color: white; }
-.portrait-card { align-self: center; background: var(--surface); border: 1px solid var(--line); border-radius: 1.25rem; box-shadow: 12px 12px 0 color-mix(in srgb, var(--accent) 17%, transparent); overflow: hidden; transform: rotate(2.5deg); }
-.portrait-card img { display: block; width: 100%; aspect-ratio: 1; object-fit: cover; filter: saturate(.9); }
-.portrait-card p { color: var(--muted); font: .78rem/1.5 monospace; margin: 0; padding: .85rem 1rem; }
-
-.home-section { border-top: 1px solid var(--line); padding: 4.5rem 0; }
-.section-head { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; margin-bottom: 1.8rem; }
-.section-head h2 { color: var(--ink); font-size: clamp(1.8rem, 4vw, 2.75rem); letter-spacing: -.04em; margin: 0; }
-.section-head a { color: var(--accent); font-weight: 700; text-decoration: none; }
-.about-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 3rem; }
-.about-grid p { color: var(--muted); font-size: 1.08rem; line-height: 1.8; margin-top: 0; }
-.interest-list { display: flex; flex-wrap: wrap; gap: .65rem; align-content: start; }
-.interest-list span { background: var(--surface); border: 1px solid var(--line); border-radius: .45rem; color: var(--ink); font: 600 .82rem/1.2 monospace; padding: .65rem .75rem; }
-.project-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
-.project-card { background: var(--surface); border: 1px solid var(--line); border-radius: .9rem; display: flex; flex-direction: column; min-height: 260px; padding: 1.35rem; text-decoration: none; transition: transform .18s ease, border-color .18s ease; }
-.project-card:hover { border-color: var(--accent); transform: translateY(-5px); }
-.project-card .project-index { color: var(--accent-2); font: 700 .75rem monospace; }
-.project-card h3 { color: var(--ink); font-size: 1.35rem; margin: auto 0 .6rem; }
-.project-card p { color: var(--muted); font-size: .94rem; line-height: 1.6; margin: 0; }
-.project-card small { color: var(--accent); font: 700 .72rem monospace; margin-top: 1rem; text-transform: uppercase; }
-.writing-list { list-style: none; margin: 0; padding: 0; }
-.writing-list li { border-top: 1px solid var(--line); }
-.writing-list a { align-items: center; color: var(--ink); display: grid; gap: 1rem; grid-template-columns: 120px 1fr auto; padding: 1.15rem 0; text-decoration: none; }
-.writing-list time { color: var(--muted); font: .77rem monospace; }
-.writing-list strong { font-size: 1.1rem; }
-.writing-list span { color: var(--accent); font-size: 1.2rem; }
-.contact-panel { background: linear-gradient(135deg, var(--accent), #3435a8); border-radius: 1.2rem; color: white; padding: clamp(1.6rem, 4vw, 3.25rem); }
-.contact-panel h2 { color: white; font-size: clamp(2rem, 5vw, 3.7rem); letter-spacing: -.05em; margin: 0 0 .6rem; }
-.contact-panel p { font-size: 1.05rem; margin-bottom: 1.4rem; opacity: .9; }
-.contact-panel a { color: white; font-weight: 800; }
-.portfolio-footer { background: transparent; border-top: 0; color: var(--muted); max-width: 1060px; margin: 0 auto; padding: 0 1.5rem 2rem; }
+.quiet-home { max-width: 680px; margin: 0 auto; min-height: 70vh; padding: 9rem 1.5rem 3rem; }
+.quiet-home__header { border-bottom: 1px solid var(--line); padding-bottom: 1rem; }
+.quiet-home__header h1 { color: var(--ink); font-size: 1.3rem; font-weight: 500; letter-spacing: -.025em; margin: 0; }
+.quiet-home__links { display: flex; gap: 1.25rem; padding: 1rem 0; }
+.quiet-home__links a { color: var(--muted); font-size: .9rem; text-decoration: none; }
+.quiet-home__links a:hover { color: var(--ink); }
+.quiet-home__section { min-height: 18rem; }
+.portfolio-footer { background: transparent; border-top: 0; color: var(--muted); max-width: 680px; margin: 0 auto; padding: 0 1.5rem 2rem; }
 .portfolio-footer footer { margin: 0; max-width: none; }
 
 @media (max-width: 768px) {
-  .home-shell { padding-top: 3.5rem; }
-  .home-hero, .about-grid { grid-template-columns: 1fr; gap: 2rem; }
-  .home-hero { min-height: auto; }
-  .portrait-card { max-width: 230px; transform: rotate(1.5deg); }
-  .project-grid { grid-template-columns: 1fr; }
-  .writing-list a { grid-template-columns: 1fr auto; }
-  .writing-list time { grid-column: 1 / -1; }
+  .quiet-home { min-height: 65vh; padding-top: 5rem; }
 }

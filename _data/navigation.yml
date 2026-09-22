@@ -10,10 +10,6 @@
 main:
   - title: "Home"
     url: /#top
-  - title: "Projects"
-    url: /#work
   - title: "Writing"
     url: /year-archive/
-  - title: "GitHub ↗"
-    url: https://github.com/Zhiyuanzion
     
