@@ -1,9 +1,10 @@
 ---
 layout: archive
-permalink: /year-archive/
-title: "Blog posts"
-author_profile: true
-published: false
+permalink: /writing/
+title: "Writing"
+author_profile: false
+redirect_from:
+  - /year-archive/
 ---
 
 {% include base_path %}

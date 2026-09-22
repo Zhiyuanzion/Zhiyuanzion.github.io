@@ -1,49 +1,59 @@
-/* Quiet personal homepage */
+/* Personal homepage layer; the AcademicPages framework remains intact underneath. */
 .portfolio-home {
-  --ink: #182235;
-  --muted: #657084;
-  --paper: #f5f7fb;
-  --surface: #ffffff;
-  --line: #dfe5ee;
-  --accent: #3e516d;
-  background: var(--paper);
-  color: var(--ink);
+  --home-ink: #202936;
+  --home-muted: #697586;
+  --home-paper: #f6f7f9;
+  --home-surface: rgba(255, 255, 255, .88);
+  --home-line: #dfe3e8;
+  background: var(--home-paper);
+  color: var(--home-ink);
 }
 
-[data-theme="dark"] .portfolio-home,
-.portfolio-home[data-theme="dark"] {
-  --ink: #edf1f8;
-  --muted: #acb7c8;
-  --paper: #10131d;
-  --surface: #171c29;
-  --line: #2a3242;
-  --accent: #bfcbe0;
+html[data-theme="dark"] .portfolio-home {
+  --home-ink: #edf0f5;
+  --home-muted: #aeb6c2;
+  --home-paper: #12161d;
+  --home-surface: rgba(24, 29, 38, .9);
+  --home-line: #303844;
 }
 
 .portfolio-home .initial-content,
 .portfolio-home .page,
 .portfolio-home .page__inner-wrap { max-width: none; }
-
-.portfolio-home .masthead {
-  background: color-mix(in srgb, var(--paper) 88%, transparent);
-  border-bottom: 1px solid var(--line);
-  backdrop-filter: blur(14px);
-}
-
-.portfolio-home .masthead__inner-wrap { max-width: 1120px; }
+.portfolio-home .masthead { background: var(--home-surface); border-bottom: 1px solid var(--home-line); }
+.portfolio-home .masthead__inner-wrap { max-width: 1060px; }
 .portfolio-home .greedy-nav { background: transparent; }
-.portfolio-home .greedy-nav a { color: var(--ink); }
+.portfolio-home .greedy-nav a { color: var(--home-ink); }
 
-.quiet-home { max-width: 680px; margin: 0 auto; min-height: 70vh; padding: 9rem 1.5rem 3rem; }
-.quiet-home__header { border-bottom: 1px solid var(--line); padding-bottom: 1rem; }
-.quiet-home__header h1 { color: var(--ink); font-size: 1.3rem; font-weight: 500; letter-spacing: -.025em; margin: 0; }
-.quiet-home__links { display: flex; gap: 1.25rem; padding: 1rem 0; }
-.quiet-home__links a { color: var(--muted); font-size: .9rem; text-decoration: none; }
-.quiet-home__links a:hover { color: var(--ink); }
-.quiet-home__section { min-height: 18rem; }
-.portfolio-footer { background: transparent; border-top: 0; color: var(--muted); max-width: 680px; margin: 0 auto; padding: 0 1.5rem 2rem; }
+.personal-home { min-height: 72vh; position: relative; }
+.home-background { background-position: center; background-size: cover; inset: 0; opacity: 0; position: absolute; transition: opacity .7s ease; }
+.home-background.is-visible { opacity: .14; }
+.home-content { margin: 0 auto; max-width: 920px; padding: 5.5rem 1.5rem 4rem; position: relative; }
+.profile-card { align-items: center; background: var(--home-surface); border: 1px solid var(--home-line); border-radius: 1rem; display: flex; gap: 2rem; padding: 2rem; }
+.profile-avatar { border-radius: 50%; height: 132px; object-fit: cover; width: 132px; }
+.profile-copy h1 { color: var(--home-ink); font-size: clamp(2rem, 5vw, 3.8rem); letter-spacing: -.05em; margin: .2rem 0; }
+.profile-kicker, .profile-major, .profile-bio { color: var(--home-muted); margin: 0; }
+.profile-kicker { font-size: .9rem; }
+.profile-major { font-size: 1rem; }
+.profile-bio { margin-top: .8rem; }
+.profile-links { display: flex; gap: 1rem; margin-top: 1.2rem; }
+.profile-links a, .section-heading a { color: var(--home-muted); text-decoration: none; }
+.profile-links a:hover, .section-heading a:hover { color: var(--home-ink); }
+.home-section { border-top: 1px solid var(--home-line); margin-top: 2rem; padding-top: 2rem; }
+.home-section h2 { color: var(--home-ink); font-size: 1.25rem; font-weight: 600; margin: 0 0 1rem; }
+.section-heading { align-items: baseline; display: flex; justify-content: space-between; }
+.skill-list { display: flex; flex-wrap: wrap; gap: .55rem; min-height: 1.5rem; }
+.skill-list span { border: 1px solid var(--home-line); border-radius: .35rem; color: var(--home-muted); font-size: .85rem; padding: .45rem .7rem; }
+.project-list { display: grid; gap: .7rem; }
+.project-item { border-bottom: 1px solid var(--home-line); color: var(--home-ink); display: flex; gap: 1rem; justify-content: space-between; padding: .8rem 0; text-decoration: none; }
+.project-item span { color: var(--home-muted); }
+.home-writing p { color: var(--home-muted); margin: 0; }
+.portfolio-footer { background: transparent; border: 0; color: var(--home-muted); margin: 0 auto; max-width: 920px; padding: 0 1.5rem 2rem; }
 .portfolio-footer footer { margin: 0; max-width: none; }
 
-@media (max-width: 768px) {
-  .quiet-home { min-height: 65vh; padding-top: 5rem; }
+@media (max-width: 620px) {
+  .home-content { padding-top: 3.5rem; }
+  .profile-card { align-items: flex-start; flex-direction: column; }
+  .profile-avatar { height: 96px; width: 96px; }
+  .project-item { align-items: flex-start; flex-direction: column; gap: .3rem; }
 }
