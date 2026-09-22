@@ -1,0 +1,24 @@
+---
+layout: compress
+---
+{% include base_path %}
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 }}" class="no-js"{% if site.site_theme == "dark" %} data-theme="dark"{% endif %}>
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+  </head>
+  <body class="portfolio-home">
+    {% include browser-upgrade.html %}
+    {% include masthead.html %}
+    <main>
+      {{ content }}
+    </main>
+    <div class="page__footer portfolio-footer">
+      <footer>
+        <p>© {{ site.time | date: '%Y' }} Zhiyuan. Built with curiosity and Jekyll.</p>
+      </footer>
+    </div>
+    {% include scripts.html %}
+  </body>
+</html>
